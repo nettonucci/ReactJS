@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
-function App() {
-  const [numero, setNumero] = useState("");
-  const [segundoNumero, setSegundoNumero] = useState("");
-  const [resultado, setResultado] = useState("");
+function UseState() {
+  const [numero, setNumero] = useState();
+  const [segundoNumero, setSegundoNumero] = useState();
+  const [resultado, setResultado] = useState();
 
   const somar = () => {
     const numeroInt = parseInt(numero);
@@ -11,10 +11,6 @@ function App() {
 
     setResultado(numeroInt + segnumeroInt);
   };
-
-  useEffect(() => {
-    console.log("Variavel numero:", numero);
-  });
 
   return (
     <div>
@@ -39,4 +35,4 @@ function App() {
   );
 }
 
-export default App;
+export default UseState;
